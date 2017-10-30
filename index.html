@@ -35,13 +35,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -62,6 +62,7 @@
   <!-- Page Content -->
   <section class="content-section-a">
 
+    <a name="about" class="anchor"></a>
     <div class="container">
       <div class="row">
         <div class="col-lg-5 ml-auto">
@@ -83,6 +84,8 @@
 
   <section class="content-section-b">
 
+
+    <a name="experience" class="anchor"></a>
     <div class="container">
 
       <div class="row">
@@ -112,19 +115,46 @@
 
   <section class="content-section-a">
 
+    <a name="contact" class="anchor"></a>
     <div class="container">
 
       <div class="row">
         <div class="col-lg-5 ml-auto">
           <hr class="section-heading-spacer">
           <div class="clearfix"></div>
-          <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-          <p class="lead">This template features the 'Lato' font, part of the
-            <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as
-            <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+          <h2 class="section-heading">Contact Us</h2>
+          <p class="lead">If you are interested in working with Independent Safety Services please contact us.
         </div>
         <div class="col-lg-5 mr-auto ">
-          <img class="img-fluid" src="img/phones.png" alt="">
+          <form role="form" id="contact-form" action="http://formspree.io/contactus@independentsafetyllc.com" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" name="_replyto" autocomplete="off" id="email" placeholder="E-mail">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" name="_next" value="https://independentsafetyllc.com" />
+            <input type="hidden" name="_subject" value="New contact us form submitted." />
+            <input type="text" name="_gotcha" style="display:none" />
+            <div class="row">
+              <div class="col-md-12">
+                <button type="submit" class="btn main-btn pull-right">Send message</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -133,44 +163,6 @@
 
   </section>
   <!-- /.content-section-a -->
-
-  <aside class="banner">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-6 my-auto">
-          <h2>Connect to Start Bootstrap:</h2>
-        </div>
-        <div class="col-lg-6 my-auto">
-          <ul class="list-inline banner-social-buttons">
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-linkedin fa-fw"></i>
-                  <span class="network-name">Linkedin</span>
-                </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </aside>
-  <!-- /.banner -->
 
   <!-- Footer -->
   <footer>
@@ -185,20 +177,20 @@
         </li>
         <li class="footer-menu-divider list-inline-item">&sdot;</li>
         <li class="list-inline-item">
-          <a href="#services">Services</a>
+          <a href="#experience">Experience</a>
         </li>
         <li class="footer-menu-divider list-inline-item">&sdot;</li>
         <li class="list-inline-item">
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
+      <p class="copyright text-muted small">Copyright &copy; Independent Safety Services LLC 2017. All Rights Reserved</p>
     </div>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper/dist/popper.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
